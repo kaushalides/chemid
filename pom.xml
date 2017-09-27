@@ -17,13 +17,8 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.chemid</groupId>
     <artifactId>structure</artifactId>
-    <packaging>pom</packaging>
     <version>1.0</version>
     <description>ChemID Chemical Structure Service</description>
-    <modules>
-        <module>preFilter</module>
-        <module>structure</module>
-    </modules>
     <dependencies>
         <!-- ******************** CDK Dependencies ************************************** -->
         <dependency>
@@ -188,7 +183,7 @@
                                 <transformer
                                         implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                     <manifestEntries>
-                                        <Main-Class>restapi.Application</Main-Class>
+                                        <Main-Class>org.chemid.structure.restapi.Application</Main-Class>
                                     </manifestEntries>
                                 </transformer>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.DontIncludeResourceTransformer">
